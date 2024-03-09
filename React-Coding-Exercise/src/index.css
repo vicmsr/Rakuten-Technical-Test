@@ -66,3 +66,42 @@ header {
 
 /* product  */
 
+.product_space {
+  display: flex;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+.product_container {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 343px;
+  height: auto;
+  border: solid 1px rgb(175, 175, 175);
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px -4px #000000;
+  padding: 5px;
+}
+
+.product_info {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.product_info img {
+  width: 120px;
+  height: 120px;
+}
+
+.product_brand {
+  font-size: 12px;
+  color: #696969;
+}
+
+.product_title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}

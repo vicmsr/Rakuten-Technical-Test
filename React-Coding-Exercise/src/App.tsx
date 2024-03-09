@@ -1,7 +1,7 @@
 import { Navbar } from "./components/NavbarComponent"
 import { Product } from "./components/ProductComponent"
 
-function App() {
+function App() { 
   return (
     <div className="App">
       <Navbar />
