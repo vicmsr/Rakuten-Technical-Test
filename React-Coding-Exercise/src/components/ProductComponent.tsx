@@ -22,6 +22,16 @@ export const Product: React.FC = () => {
     },
   ];
 
+  const dataMissing = data.every(product => (
+    product.brand && product.href && product.title && product.newPrice && product.usedPrice && product.image
+  ));
+
+  if(!dataMissing) {
+    return <>
+      <h3 className='error_data'>We are unable to display the product due to missing data... </h3>
+    </>
+  }
+
   console.log(data);
 
   return (
@@ -30,10 +40,13 @@ export const Product: React.FC = () => {
         <div className='product_container'>
         {data.map((product) => (
           <div key={product.image} className='product_info'>
-            <img src={product.image} />
-            <p className='product_brand'>{product.brand}</p>
-            <p className='product_title'>{product.title}</p>
-            
+            <a href={product.href}><img src={product.image} /></a>
+            <div className='product_details'>
+              <p className='product_brand'>{product.brand}</p>
+              <p className='product_title'>{product.title}</p>
+              <p className='product_newprice'>{product.newPrice}<span>Neuf</span></p>
+              <p className='product_usedprice'>Occasion dès <span>{product.usedPrice}</span></p>
+            </div>
           </div>
         ))}
         </div>
