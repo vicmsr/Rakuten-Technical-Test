@@ -50,8 +50,7 @@ header {
 @media (max-width: 580px) {
   .navbar1 {
     display: flex;
-    flex-direction: column;
-    padding: 2%;
+    padding: 3%;
   }
 
   .navbar2 {
@@ -59,6 +58,12 @@ header {
   }
 
   .drop_menu {
+    display: flex;
+  } 
+}
+
+@media (max-width: 355px) {
+  header {
     display: flex;
     flex-direction: column;
   }
@@ -69,7 +74,7 @@ header {
 .product_space {
   display: flex;
   justify-content: center;
-  margin-top: 15%;
+  margin-top: 7%;
 }
 
 .product_container {
@@ -142,9 +147,24 @@ header {
   color: #333;
 }
 
+@media (max-width: 355px) {
+
+  .product_space {
+    margin-top: 10%;
+  }
+
+  .product_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 /* other  */
 
 .error_data {
   text-align: center;
-  margin-top: 25%;
+  margin-top: 20%;
 }
