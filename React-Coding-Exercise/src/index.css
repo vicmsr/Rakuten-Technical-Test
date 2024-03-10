@@ -8,7 +8,7 @@
 /* navabar  */
 
 header {
-  background-color: rgb(223, 230, 233);
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,7 +16,7 @@ header {
   width: 100%;
   height: auto;
   padding: 2%;
-  border-bottom: solid 0.1px gray;
+  border-bottom: solid 0.1px rgb(194, 194, 194);
 }
 
 .navbar1 {
@@ -50,7 +50,7 @@ header {
 @media (max-width: 580px) {
   .navbar1 {
     display: flex;
-    padding: 3%;
+    padding: 4%;
   }
 
   .navbar2 {
