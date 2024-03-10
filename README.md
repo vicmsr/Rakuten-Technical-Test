@@ -5,6 +5,7 @@
 **Rakuten Frontend Internship Question + React Coding Exercise**
 
 *Created and produced entirely by* **Victor Mesuré**
+
 ---
 **For the React Coding Exercise**
 
